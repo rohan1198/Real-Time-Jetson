@@ -88,7 +88,7 @@ Set CPU governors to performance mode:
 Install essential development tools and utilities:
 
 ```bash
-sudo apt install cmake dconf-editor ffmpeg build-essential tilix vlc ubuntu-restricted-extras python3-dev python3-pip python3-venv python3-numba lm-sensors cheese neofetch htop nvtop chrome-gnome-shell gnome-tweaks git -y
+sudo apt install cmake dconf-editor ffmpeg build-essential tilix vlc ubuntu-restricted-extras python3-dev python3-pip python3-venv python3-numba lm-sensors cheese neofetch htop nvtop chrome-gnome-shell gnome-tweaks git stress-ng -y
 sudo pip3 install jetson-utils
 sudo apt install rt-tests
 sudo reboot

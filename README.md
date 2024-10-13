@@ -127,6 +127,13 @@ sudo reboot
    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
    ```
 
+6. Jetson-GPU-burn
+   ```bash
+   https://github.com/anseeto/jetson-gpu-burn.git
+   cd jetson-gpu-burn
+   make
+   ```
+
 ## ROS 2 Humble Installation
 
 1. Set up repositories:

@@ -199,9 +199,4 @@ sudo reboot
    Categories=Utility;
    Terminal=false
    ```
-
-## Conclusion
-
-This setup guide covers the essential steps to configure your Nvidia Jetson Orin Nano for development. After completing these steps, your system will be updated, optimized for performance, and equipped with necessary development tools and software.
-
-For any issues or questions, please refer to the official Nvidia Jetson documentation or seek help in the Jetson community forums.
+   

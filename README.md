@@ -119,6 +119,7 @@ sudo reboot
    wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
    wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
    wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+   cd ~
    ```
 
 5. Install Zsh plugins:
@@ -129,7 +130,7 @@ sudo reboot
 
 6. Jetson-GPU-burn
    ```bash
-   https://github.com/anseeto/jetson-gpu-burn.git
+   git clone https://github.com/anseeto/jetson-gpu-burn.git
    cd jetson-gpu-burn
    make
    ```

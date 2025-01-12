@@ -94,6 +94,11 @@ sudo apt install rt-tests
 sudo reboot
 ```
 
+## Set environment variables for Nvidia Jetson Orin Nano GPIO
+```bash
+echo "export JETSON_MODEL_NAME="JETSON_ORIN_NANO" >> ~/.zshrc
+```
+
 ## Zsh and Oh My Zsh Setup
 
 1. Install Zsh and set it as the default shell:
@@ -171,33 +176,7 @@ sudo reboot
 
 ## Deskflow Installation (Optional)
 
-1. Install dependencies:
-   ```bash
-   sudo apt install libxtst-dev libpugixml-dev libgdk-pixbuf-2.0-dev libnotify-dev qt6-base-dev libgmock-dev libxkbfile-dev
-   ```
+- [Deskflow](https://github.com/deskflow/deskflow) allows sharing one mouse and keyboard between multiple computers.
+<br>
 
-2. Clone and build Deskflow:
-   ```bash
-   git clone https://github.com/deskflow/deskflow.git
-   cd deskflow
-   cmake -B build
-   ```
-
-3. Create a desktop entry:
-   ```bash
-   nano ~/.local/share/applications/deskflow.desktop
-   ```
-
-4. Add the following content (adjust paths as necessary):
-   ```
-   [Desktop Entry]
-   Version=1.0
-   Type=Application
-   Name=Deskflow
-   Icon=/home/jetson/Downloads/deskflow/res/app.ico
-   Exec=/home/jetson/Downloads/deskflow/build/bin/deskflow
-   Comment=Start Synergy to share keyboard and mouse
-   Categories=Utility;
-   Terminal=false
-   ```
-   
+[Building Deskflow on the Nvidia Jetson Orin Nano](./build_deskflow.md)

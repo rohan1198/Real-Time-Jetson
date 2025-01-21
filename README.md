@@ -94,11 +94,6 @@ sudo apt install rt-tests
 sudo reboot
 ```
 
-## Set environment variables for Nvidia Jetson Orin Nano GPIO
-```bash
-echo "export JETSON_MODEL_NAME="JETSON_ORIN_NANO" >> ~/.zshrc
-```
-
 ## Zsh and Oh My Zsh Setup
 
 1. Install Zsh and set it as the default shell:
@@ -135,10 +130,15 @@ echo "export JETSON_MODEL_NAME="JETSON_ORIN_NANO" >> ~/.zshrc
 
 6. Jetson-GPU-burn
    ```bash
-   git clone https://github.com/anseeto/jetson-gpu-burn.git
-   cd jetson-gpu-burn
+   git clone https://github.com/wilicc/gpu-burn.git
+   cd gpu-burn
    make
    ```
+
+7. Set environment variables for Nvidia Jetson Orin Nano GPIO
+```bash
+echo 'export JETSON_MODEL_NAME="JETSON_ORIN_NANO"' >> ~/.zshrc
+```
 
 ## ROS 2 Humble Installation
 

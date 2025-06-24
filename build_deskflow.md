@@ -132,17 +132,17 @@ sudo mkswap /swapfile
 sudo swapon /swapfile
 ```
 
-# 6. Build QT 6.7.0
+# 6. Build QT 6.8.0
 
 ```bash
 cd ~/Downloads
-wget https://download.qt.io/official_releases/qt/6.7/6.7.0/single/qt-everywhere-src-6.7.0.tar.xz
-tar xvf qt-everywhere-src-6.7.0.tar.xz
-rm qt-everywhere-src-6.7.0.tar.xz
-cd qt-everywhere-src-6.7.0
+wget https://download.qt.io/official_releases/qt/6.7/6.8.0/single/qt-everywhere-src-6.8.0.tar.xz
+tar xvf qt-everywhere-src-6.8.0.tar.xz
+rm qt-everywhere-src-6.8.0.tar.xz
+cd qt-everywhere-src-6.8.0
 mkdir build && cd build
 
-../configure -prefix /usr/local/qt6.7.0 \
+../configure -prefix /usr/local/qt6.8.0 \
     -release \
     -nomake examples \
     -nomake tests \
@@ -162,8 +162,8 @@ sudo cmake --install .
 
 ```bash
 # Add to your shell's rc file (.bashrc or .zshrc)
-echo 'export PATH=/usr/local/qt6.7.0/bin:$PATH' >> ~/.zshrc
-echo 'export LD_LIBRARY_PATH=/usr/local/qt6.7.0/lib:$LD_LIBRARY_PATH' >> ~/.zshrc
+echo 'export PATH=/usr/local/qt6.8.0/bin:$PATH' >> ~/.zshrc
+echo 'export LD_LIBRARY_PATH=/usr/local/qt6.8.0/lib:$LD_LIBRARY_PATH' >> ~/.zshrc
 source ~/.zshrc  # or source ~/.bashrc if using bash
 ```
 

@@ -1,6 +1,6 @@
 # Real-Time Jetson
 
-A comprehensive guide for setting up a high-performance, real-time development environment on the NVIDIA Jetson Orin Nano with Ubuntu 22.04, real-time kernel, CPU core isolation, CUDA-enabled OpenCV, and ROS2 Humble with custom OpenCV+CUDA.
+A guide for setting up a high-performance, real-time development environment on the NVIDIA Jetson Orin Nano with Jetpack 6.2, Ubuntu 22.04, real-time kernel, CPU core isolation, CUDA-enabled OpenCV, and ROS2 Humble with custom OpenCV+CUDA.
 
 ## 🎯 Overview
 
@@ -13,15 +13,15 @@ A comprehensive guide for setting up a high-performance, real-time development e
 
 ## 🚀 Installation
 
-| Step | Documentation | Description | Test Command |
-|------|---------------|-------------|--------------|
-| 1 | [System Setup](docs/01-system-setup.md) | Updates & essential packages | `pytest tests/test_system_setup.py` |
-| 2 | [Real-Time Kernel](docs/02-realtime-kernel.md) | Ubuntu Pro & RT kernel | `pytest tests/test_realtime_kernel.py` |
-| 3 | [Performance Tuning](docs/03-performance-tuning.md) | CPU governor, swap, core isolation | `pytest tests/test_performance.py` |
-| 4 | [Development Environment](docs/04-development-environment.md) | Zsh, tools (optional) | Manual verification |
-| 5 | [OpenCV with CUDA](docs/05-opencv-cuda.md) | Custom OpenCV 4.10.0 build | `pytest tests/test_opencv_cuda.py` |
-| 6 | [ROS2 Humble](docs/06-ros2-humble.md) | ROS2 from source + vision packages | `pytest tests/test_ros2_vision.py` |
-| 7 | [Verification](docs/07-verification.md) | Complete system testing | `pytest tests/test_integration.py` |
+| Step | Documentation | Description |
+|------|---------------|-------------|
+| 1 | [System Setup](docs/01-system-setup.md) | Updates & essential packages |
+| 2 | [Real-Time Kernel](docs/02-realtime-kernel.md) | Ubuntu Pro & RT kernel |
+| 3 | [Performance Tuning](docs/03-performance-tuning.md) | CPU governor, swap, core isolation |
+| 4 | [Development Environment](docs/04-development-environment.md) | Zsh, tools (optional) |
+| 5 | [OpenCV with CUDA](docs/05-opencv-cuda.md) | Custom OpenCV 4.10.0 build |
+| 6 | [ROS2 Humble](docs/06-ros2-humble.md) | ROS2 from source + vision packages |
+| 7 | [Verification](docs/07-verification.md) | Complete system testing |
 
 ### Quick Commands
 
@@ -32,41 +32,7 @@ cd Real-Time-Jetson
 
 # Install pytest for testing
 pip3 install pytest psutil
-
-# Follow docs/ in order, testing after each step
-# Example:
-pytest tests/test_system_setup.py -v
 ```
-
-## 🧪 Testing
-
-Each component includes comprehensive pytest validation:
-
-```bash
-# Test individual components
-pytest tests/test_opencv_cuda.py -v
-pytest tests/test_ros2_vision.py -v
-
-# Test everything
-pytest tests/ -v
-
-# Test with detailed output
-pytest tests/ -v -s
-```
-
-## 📚 Additional Documentation
-
-- **[Troubleshooting](docs/troubleshooting.md)** - Solutions for common issues
-- **[Coordinate Systems](docs/coordinate-systems.md)** - RealSense vs EuRoC analysis for VI sensor development
-
-## 🎯 What You'll Have After Setup
-
-- ✅ **Real-time kernel** with microsecond-precision timing
-- ✅ **Isolated CPU core 3** for dedicated real-time processing
-- ✅ **CUDA-accelerated OpenCV 4.10.0** with GPU operations
-- ✅ **Complete ROS2 Humble** with vision packages (`cv_bridge`, `image_pipeline`, etc.)
-- ✅ **Performance-optimized system** for SLAM development
-- ✅ **Professional development environment** with proper testing
 
 ## 💡 Real-Time Development Example
 

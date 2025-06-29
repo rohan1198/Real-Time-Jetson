@@ -136,7 +136,7 @@ sudo swapon /swapfile
 
 ```bash
 cd ~/Downloads
-wget https://download.qt.io/official_releases/qt/6.7/6.8.0/single/qt-everywhere-src-6.8.0.tar.xz
+wget https://download.qt.io/official_releases/qt/6.8/6.8.0/single/qt-everywhere-src-6.8.0.tar.xz
 tar xvf qt-everywhere-src-6.8.0.tar.xz
 rm qt-everywhere-src-6.8.0.tar.xz
 cd qt-everywhere-src-6.8.0

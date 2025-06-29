@@ -21,25 +21,10 @@ A guide for setting up a high-performance, real-time development environment on 
 | 4 | [Development Environment](docs/04-development-environment.md) | Zsh, tools (optional) |
 | 5 | [OpenCV with CUDA](docs/05-opencv-cuda.md) | Custom OpenCV 4.10.0 build |
 | 6 | [ROS2 Humble](docs/06-ros2-humble.md) | ROS2 from source + vision packages |
-| 7 | [Verification](docs/07-verification.md) | Complete system testing |
-
-### Quick Commands
-
-```bash
-# Clone the repository
-git clone https://github.com/rohan1198/Real-Time-Jetson.git
-cd Real-Time-Jetson
-
-# Install pytest for testing
-pip3 install pytest psutil
-```
 
 ## 💡 Real-Time Development Example
 
 ```bash
-# Source the custom environment
-source config/setup_environment.sh
-
 # Run real-time processing on isolated core 3
 sudo chrt -f 99 taskset -c 3 ros2 run your_package sensor_node
 

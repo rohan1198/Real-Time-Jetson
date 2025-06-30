@@ -91,14 +91,22 @@ sudo apt install -y \
     libeigen3-dev \
     libboost-all-dev \
     libceres-dev \
-    qtbase5-dev \
-    qtdeclarative5-dev \
     python3-lark \
     python3-vcstool \
     python3-numpy \
     python3-dev \
     libboost-python-dev \
     libboost-thread-dev
+
+# Install Qt5 and PyQt5 dependencies
+sudo apt install -y \
+    qtbase5-dev \
+    qtdeclarative5-dev \
+    qtbase5-dev-tools \
+    pyqt5-dev \
+    pyqt5-dev-tools \
+    python3-pyqt5 \
+    python3-pyqt5.sip
 ```
 
 ## 📁 Create ROS2 Workspace
@@ -208,7 +216,7 @@ sudo ln -s /usr/local/lib/pkgconfig/opencv.pc /usr/local/lib/pkgconfig/opencv4.p
 # Then run the previous command again
 ```
 
-```
+```bash
 # Build everything with the custom OpenCV toolchain
 cd ~/ros2_humble
 colcon build --symlink-install \

@@ -21,6 +21,7 @@ A guide for setting up a high-performance, real-time development environment on 
 | 4 | [Development Environment](docs/04-development-environment.md) | Zsh, tools (optional) |
 | 5 | [OpenCV with CUDA](docs/05-opencv-cuda.md) | Custom OpenCV 4.10.0 build |
 | 6 | [ROS2 Humble](docs/06-ros2-humble.md) | ROS2 from source + vision packages |
+| 7 | [Build Deskflow](docs/07-deskflow.md) | Keyboard and mouse sharing (optional) |
 
 ## 💡 Real-Time Development Example
 
